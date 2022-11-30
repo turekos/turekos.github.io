@@ -71,8 +71,12 @@
                 </p>
             </div>
             <div class="command-container">
-                <h3 class="command-title">Test cstom page</h3>
-                <p class="command-text">curl --header "Host: .example.com" localhost/index.html</p>
+                <h3 class="command-title">Test http page</h3>
+                <p class="command-text">curl --header "Host: example.com" http://localhost</p>
+            </div>
+            <div class="command-container">
+                <h3 class="command-title">Test https page</h3>
+                <p class="command-text">curl -k --header "Host: example.com" https://localhost</p>
             </div>
         </div>
         <div class="tags-container-wrap">
