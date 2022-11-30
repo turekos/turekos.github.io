@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
     <title>Useful commands</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -58,25 +59,44 @@
         <div class="command-container-wrap">
             <div class="command-container">
                 <h3 class="command-title">Test Nginx</h3>
-                <p class="command-text">nginx -t</p>
+                <div  class="copy-field">
+                    <p id="p1" class="command-text">nginx -t</p>
+                    <button class="copy-button" onclick="copyToClipboard('#p1')">Copy</button>
+                </div>
             </div>
             <div class="command-container">
                 <h3 class="command-title" >Custom page</h3>
-                <p class="command-text">
-                    server {<br>
-                    &emsp;listen 80;<br>
-                    &emsp;server_name example.com;<br>
-                    &emsp;root /var/www/example.com;<br>
-                }
-                </p>
+                <div  class="copy-field">
+                    <p id="p2" class="command-text">
+                        server {<br>
+                        &emsp;listen 80;<br>
+                        &emsp;server_name example.com;<br>
+                        &emsp;root /var/www/example.com;<br>
+                        }
+                    </p>
+                    <button class="copy-button" onclick="copyToClipboard('#p2')">Copy</button>
+                </div>
             </div>
             <div class="command-container">
                 <h3 class="command-title">Test http page</h3>
-                <p class="command-text">curl --header "Host: example.com" http://localhost</p>
+                <div  class="copy-field">
+                    <p id="p3" class="command-text">curl --header "Host: example.com" http://localhost</p>
+                    <button class="copy-button" onclick="copyToClipboard('#p3')">Copy</button>
+                </div>
             </div>
             <div class="command-container">
                 <h3 class="command-title">Test https page</h3>
-                <p class="command-text">curl -k --header "Host: example.com" https://localhost</p>
+                <div  class="copy-field">
+                    <p id="p4" class="command-text">curl -k --header "Host: example.com" https://localhost</p>
+                    <button class="copy-button" onclick="copyToClipboard('#p4')">Copy</button>
+                </div>
+            </div>
+            <div class="command-container">
+                <h3 class="command-title">header</h3>
+                <div  class="copy-field">
+                    <p id="p5" class="command-text">text</p>
+                    <button class="copy-button" onclick="copyToClipboard('#p5')">Copy</button>
+                </div>
             </div>
         </div>
         <div class="tags-container-wrap">
