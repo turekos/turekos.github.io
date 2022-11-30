@@ -57,20 +57,22 @@
     <main class="main-container-page">
         <div class="command-container-wrap">
             <div class="command-container">
-                <h3 class="command-title" >Title</h3>
-                <p class="command-text">command ....</p>
+                <h3 class="command-title">Test Nginx</h3>
+                <p class="command-text">nginx -t</p>
             </div>
             <div class="command-container">
-                <h3 class="command-title">Title</h3>
-                <p class="command-text">command ....</p>
+                <h3 class="command-title" >Custom page</h3>
+                <p class="command-text">
+                    server {<br>
+                    &emsp;listen 80;<br>
+                    &emsp;server_name example.com;<br>
+                    &emsp;root /var/www/example.com;<br>
+                }
+                </p>
             </div>
             <div class="command-container">
-                <h3 class="command-title" >Title</h3>
-                <p class="command-text">command ....</p>
-            </div>
-            <div class="command-container">
-                <h3 class="command-title">Title</h3>
-                <p class="command-text">command ....</p>
+                <h3 class="command-title">Test cstom page</h3>
+                <p class="command-text">curl --header "Host: .example.com" localhost/index.html</p>
             </div>
         </div>
         <div class="tags-container-wrap">
@@ -82,7 +84,7 @@
                 <a href="#">#tag #4</a>
             </div>
             <div class="useful-link-container">
-                <a href="#">Link #1</a>
+                <a href="#">http://nginx.org/</a>
                 <a href="#">Link #2</a>
                 <a href="#">Link #5</a>
                 <a href="#">Link #4</a>
