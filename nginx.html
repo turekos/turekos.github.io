@@ -67,12 +67,7 @@
             <div class="command-container">
                 <h3 class="command-title" >Custom page</h3>
                 <div  class="copy-field">
-                    <p id="p2" class="command-text">
-                        server {<br>
-                        &emsp;listen 80;<br>
-                        &emsp;server_name example.com;<br>
-                        &emsp;root /var/www/example.com;<br>
-                        }
+                    <p id="p2" class="command-text">server {&emsp;<br>&emsp;listen 80;<br>&emsp;server_name example.com;<br>&emsp;root /var/www/example.com;<br>}
                     </p>
                     <button class="copy-button" onclick="copyToClipboard('#p2')">Copy</button>
                 </div>
@@ -92,10 +87,25 @@
                 </div>
             </div>
             <div class="command-container">
+                <h3 class="command-title">Generate self signed certificate</h3>
+                <div  class="copy-field">
+                    <p id="p6" class="command-text space">openssl req -newkey rsa:4096<br>&emsp; -x509<br>&emsp; -sha256<br>&emsp; -days 3650<br>&emsp; -nodes<br>&emsp; -out /etc/nginx/ssl/example.pem<br>&emsp; -keyout /etc/nginx/ssl/example.key</p>
+                    <button class="copy-button" onclick="copyToClipboard('#p6')">Copy</button>
+                </div>
+            </div>
+            <div class="command-container">
                 <h3 class="command-title">header</h3>
                 <div  class="copy-field">
                     <p id="p5" class="command-text">text</p>
                     <button class="copy-button" onclick="copyToClipboard('#p5')">Copy</button>
+                </div>
+            </div>
+
+            <div class="command-container">
+                <h3 class="command-title">header</h3>
+                <div  class="copy-field">
+                    <p id="p7" class="command-text">text</p>
+                    <button class="copy-button" onclick="copyToClipboard('#p7')">Copy</button>
                 </div>
             </div>
         </div>

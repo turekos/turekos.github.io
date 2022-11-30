@@ -344,12 +344,8 @@ a.active {
   width: 100%;
   position: relative;
   border-radius: 5px;
-  /* padding-left: 20px; */
-  /* margin: 0px;
-   padding: 0px;
-   overflow-x:hidden; */
-   /* text-align: left; */
-   display: block;
+  display: block;
+  padding-right: 50px;
 }
 
 .copy-field{
