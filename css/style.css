@@ -338,23 +338,37 @@ a.active {
   margin-top: 10px;
 }
 
-
 .command-text{
   background-color: rgb(226, 226, 226);
   width: 100%;
-  position: relative;
   border-radius: 5px;
   display: block;
   padding-right: 50px;
 }
 
+.command-text:hover + .copy-button{
+  visibility: visible;
+  opacity: 1;
+}
+.copy-button:hover{
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+}
 .copy-field{
   position: relative;
 }
 .copy-button{
+  visibility: hidden;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 3px;
+  right: 3px;
+  background-color: #0000ff;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  opacity: 0;
+  transition: visibility 1s, opacity 2s;
 }
 
 /* --------------media--------------------- */
