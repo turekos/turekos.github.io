@@ -67,11 +67,18 @@
                     <button class="copy-button" onclick="copyToClipboard('#p1')">Copy</button>
                 </div>
             </div>
+            <div class="command-container">
+                <h3 class="command-title">How to sort array in bash</h3>
+                <div  class="copy-field">
+                    <p id="p2" class="command-text"># Sorting the array in Bash<br>&emsp; # using Bubble sort<br>&emsp; # Static input of Array<br>&emsp;  arr=(10 8 20 100 12)<br>&emsp;  echo "Array in original order"<br>&emsp;  echo ${arr[*]}<br>&emsp;  # Performing Bubble sort<br>&emsp;  for ((i = 0; i<5; i++))<br>&emsp;  do<br>&emsp;  for((j = 0; j<5-i-1; j++))<br>&emsp;  do<br>&emsp;  if [ ${arr[j]} -gt ${arr[$((j+1))]} ]<br>&emsp;    then<br>&emsp;  # swap<br>&emsp;    temp=${arr[j]}<br>&emsp;   arr[$j]=${arr[$((j+1))]}<br>&emsp;  arr[$((j+1))]=$temp<br>&emsp;  fi<br>&emsp;   done<br>&emsp;  done<br>&emsp;   echo "Array in sorted order :"<br>&emsp;   echo ${arr[*]}</p>
+                    <button class="copy-button" onclick="copyToClipboard('#p2')">Copy</button>
+                </div>
+            </div>
         </div>
         <div class="tags-container-wrap">
             <div class="tag-container">
                 <a href="#p1">copy to file</a>
-                <a href="#">#tag #1</a>
+                <a href="#p2">sort array</a>
                 <a href="#">#tag #2</a>
                 <a href="#">#tag #5</a>
                 <a href="#">#tag #4</a>
