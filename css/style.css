@@ -368,7 +368,7 @@ a.active {
   border: none;
   color: #ffffff;
   opacity: 0;
-  transition: visibility 1s, opacity 2s;
+  transition: 2s 0s;
 }
 
 /* --------------media--------------------- */
